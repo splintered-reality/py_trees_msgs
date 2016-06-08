@@ -10,7 +10,7 @@
   <maintainer email="m.staniaszek@gmail.com">Michal Staniaszek</maintainer>
   <maintainer email="naveedhd@gmail.com">Naveed Usmani</maintainer>
 
-  <license>MIT</license>  
+  <license>BSD</license>  
 
   <url type="website">http://ros.org/wiki/py_trees_msgs</url>
   <url type="repository">https://github.com/stonier/py_trees_msgs</url>
