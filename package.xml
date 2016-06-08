@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <package>
   <name>py_trees_msgs</name>
   <version>0.0.1</version>
@@ -5,14 +6,19 @@
     Messages used by py_trees
   </description>
 
+  <maintainer email="stonier@yujinrobot.com">Daniel Stonier</maintainer>
+  <maintainer email="m.staniaszek@gmail.com">Michal Staniaszek</maintainer>
+  <maintainer email="naveedhd@gmail.com">Naveed Usmani</maintainer>
+
   <license>BSD</license>  
 
-  <url type="website">http://www.ros.org/wiki/gopher_msgs</url>
-  <url type="repository">https://bitbucket.org/yujinrobot/gopher_msgs</url>
-  <url type="bugtracker">https://bitbucket.org/yujinrobot/issues</url>
+  <url type="website">http://ros.org/wiki/py_trees_msgs</url>
+  <url type="repository">https://github.com/stonier/py_trees_msgs</url>
+  <url type="bugtracker">https://github.com/stonier/py_trees_msgs/issues</url>
 
-  <maintainer email="m.staniaszek@gmail.com">Michal Staniaszek</maintainer>
+  <author>Daniel Stonier</author>
   <author>Michal Staniaszek</author>
+  <author>Naveed Usmani</author>
 
   <buildtool_depend>catkin</buildtool_depend>
   
