@@ -16,7 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 ##############################################################################
-# Messgaes
+# Messages
 ##############################################################################
 
 add_message_files(
@@ -31,6 +31,7 @@ add_service_files(
   FILES
   BlackboardVariables.srv
   SubBlackboardWatch.srv
+  SubBlackboardShutdown.srv
 )
 
 generate_messages(DEPENDENCIES std_msgs uuid_msgs)
