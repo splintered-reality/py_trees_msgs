@@ -30,8 +30,8 @@ add_service_files(
   DIRECTORY srv
   FILES
   BlackboardVariables.srv
-  SubBlackboardWatch.srv
-  SubBlackboardShutdown.srv
+  SpawnBlackboardWatcher.srv
+  DestroyBlackboardWatcher.srv
 )
 
 generate_messages(DEPENDENCIES std_msgs uuid_msgs)
