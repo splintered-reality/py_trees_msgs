@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>py_trees_msgs</name>
-  <version>0.2.0</version>
+  <version>0.3.0</version>
   <description>
     Messages used by py_trees
   </description>
@@ -10,7 +10,7 @@
   <maintainer email="m.staniaszek@gmail.com">Michal Staniaszek</maintainer>
   <maintainer email="naveedhd@gmail.com">Naveed Usmani</maintainer>
 
-  <license>BSD</license>  
+  <license>BSD</license>
 
   <url type="website">http://ros.org/wiki/py_trees_msgs</url>
   <url type="repository">https://github.com/stonier/py_trees_msgs</url>
@@ -21,7 +21,7 @@
   <author>Naveed Usmani</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  
+
   <build_depend>message_generation</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>uuid_msgs</build_depend>

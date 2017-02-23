@@ -5,6 +5,7 @@ uint8 SUCCESS = 3
 uint8 FAILURE = 4
 
 # Possible types of behaviour
+uint8 UNKNOWN_TYPE = 0
 uint8 BEHAVIOUR = 1
 uint8 SEQUENCE = 2
 uint8 SELECTOR = 3

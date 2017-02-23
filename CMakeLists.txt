@@ -29,9 +29,9 @@ add_message_files(
 add_service_files(
   DIRECTORY srv
   FILES
-  BlackboardVariables.srv
-  SpawnBlackboardWatcher.srv
-  DestroyBlackboardWatcher.srv
+  GetBlackboardVariables.srv
+  OpenBlackboardWatcher.srv
+  CloseBlackboardWatcher.srv
 )
 
 generate_messages(DEPENDENCIES std_msgs uuid_msgs)
