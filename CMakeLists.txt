@@ -10,7 +10,10 @@ project(py_trees_msgs)
 ##############################################################################
 
 find_package(catkin REQUIRED COMPONENTS
+    actionlib_msgs
+    dynamic_reconfigure
     message_generation
+    sensor_msgs
     std_msgs
     uuid_msgs
 )
@@ -18,6 +21,16 @@ find_package(catkin REQUIRED COMPONENTS
 ##############################################################################
 # Messages
 ##############################################################################
+
+generate_dynamic_reconfigure_options(
+    dynamic_reconfigure/Battery.cfg
+)
+
+add_action_files(
+  DIRECTORY action
+  FILES
+  Rotate.action
+)
 
 add_message_files(
   DIRECTORY msg
@@ -34,7 +47,12 @@ add_service_files(
   CloseBlackboardWatcher.srv
 )
 
-generate_messages(DEPENDENCIES std_msgs uuid_msgs)
+generate_messages(DEPENDENCIES
+    actionlib_msgs
+    sensor_msgs
+    std_msgs
+    uuid_msgs
+)
 
 ##############################################################################
 # Package
