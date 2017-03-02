@@ -13,7 +13,6 @@ find_package(catkin REQUIRED COMPONENTS
     actionlib_msgs
     dynamic_reconfigure
     message_generation
-    sensor_msgs
     std_msgs
     uuid_msgs
 )
@@ -49,7 +48,6 @@ add_service_files(
 
 generate_messages(DEPENDENCIES
     actionlib_msgs
-    sensor_msgs
     std_msgs
     uuid_msgs
 )
