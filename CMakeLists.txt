@@ -24,6 +24,7 @@ find_package(catkin REQUIRED COMPONENTS
 generate_dynamic_reconfigure_options(
     dynamic_reconfigure/Battery.cfg
     dynamic_reconfigure/MockActionServer.cfg
+    dynamic_reconfigure/MockSafetySensors.cfg
 )
 
 add_action_files(
