@@ -1,15 +1,16 @@
 ###############################################################################
-# Rotate
+# Dicj
 ###############################################################################
 #
-# Rotates the robot a full 2pi radians.
-# Used for the py_trees_ros mocking demos/tests!
+# Interaface to a typical docking controller
 #
 ###############################################################################
 
 ####################
 # Goal
 ####################
+# To dock (True) or undock (False)
+bool dock
 
 ---
 ####################
@@ -30,4 +31,3 @@ int8 ERROR = 1
 ####################
 
 float32 percentage_completed
-float32 angle_rotated          # in radians

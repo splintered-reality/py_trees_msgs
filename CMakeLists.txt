@@ -28,24 +28,28 @@ generate_dynamic_reconfigure_options(
 )
 
 add_action_files(
-  DIRECTORY action
+  DIRECTORY
+      action
   FILES
-  Rotate.action
+      Dock.action
+      Rotate.action
 )
 
 add_message_files(
-  DIRECTORY msg
+  DIRECTORY
+      msg
   FILES
-  Behaviour.msg
-  BehaviourTree.msg
+      Behaviour.msg
+      BehaviourTree.msg
 )
 
 add_service_files(
-  DIRECTORY srv
+  DIRECTORY
+      srv
   FILES
-  GetBlackboardVariables.srv
-  OpenBlackboardWatcher.srv
-  CloseBlackboardWatcher.srv
+      GetBlackboardVariables.srv
+      OpenBlackboardWatcher.srv
+      CloseBlackboardWatcher.srv
 )
 
 generate_messages(DEPENDENCIES
