@@ -1,11 +1,8 @@
 # Py Trees Msgs
 
-[ ![License] [license-image] ] [license]
+Refer to the [py_trees_ros package documentation](https://stonier.github.io/py_trees_ros/) for more information.
 
-[license-image]: https://img.shields.io/badge/License-BSD%203--Clause-orange.svg?style=plastic
-[license]: LICENSE
-
-## The Py Trees Repositories
+## The ROS Py Trees Repositories
 
 * [py_trees](https://github.com/stonier/py_trees)
 * [py_trees_msgs](https://github.com/stonier/py_trees_msgs)
