@@ -23,7 +23,7 @@ find_package(rosidl_default_generators REQUIRED)
 # find_package(actionlib_msgs REQUIRED)
 # find_package(dynamic_reconfigure REQUIRED)
 find_package(std_msgs REQUIRED)
-# find_package(uuid_msgs REQUIRED)
+find_package(uuid_msgs REQUIRED)
 
 ##############################################################################
 # Messages
@@ -42,19 +42,11 @@ find_package(std_msgs REQUIRED)
 #      Dock.action
 #      Rotate.action
 #)
-#
-#set(msg_files
-#  "msg/Behaviour.msg"
-#  "msg/BehaviourTree.msg"
-#)
-#rosidl_generate_interfaces(${PROJECT_NAME}
-#  ${msg_files}
-#  DEPENDENCIES
-#    actionlib_msgs
-#    std_msgs
-#    uuid_msgs
-#  ADD_LINTER_TESTS
-#)
+
+set(msg_files
+  "msg/Behaviour.msg"
+  "msg/BehaviourTree.msg"
+)
 
 set(srv_files
   "srv/GetBlackboardVariables.srv"
@@ -64,6 +56,11 @@ set(srv_files
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${srv_files}
+  ${msg_files}
+  DEPENDENCIES
+    # actionlib_msgs
+    # std_msgs
+    uuid_msgs
   ADD_LINTER_TESTS
 )
 ##############################################################################
