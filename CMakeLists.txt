@@ -2,68 +2,74 @@
 # CMake
 ##############################################################################
 
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(py_trees_msgs)
+
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
 ##############################################################################
 # Dependencies
 ##############################################################################
 
-find_package(catkin REQUIRED COMPONENTS
-    actionlib_msgs
-    dynamic_reconfigure
-    message_generation
-    std_msgs
-    uuid_msgs
-)
+find_package(ament_cmake REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+# find_package(actionlib_msgs REQUIRED)
+# find_package(dynamic_reconfigure REQUIRED)
+find_package(std_msgs REQUIRED)
+# find_package(uuid_msgs REQUIRED)
 
 ##############################################################################
 # Messages
 ##############################################################################
 
-generate_dynamic_reconfigure_options(
-    dynamic_reconfigure/Battery.cfg
-    dynamic_reconfigure/MockActionServer.cfg
-    dynamic_reconfigure/MockSafetySensors.cfg
+#generate_dynamic_reconfigure_options(
+#    dynamic_reconfigure/Battery.cfg
+#    dynamic_reconfigure/MockActionServer.cfg
+#    dynamic_reconfigure/MockSafetySensors.cfg
+#)
+#
+#add_action_files(
+#  DIRECTORY
+#      action
+#  FILES
+#      Dock.action
+#      Rotate.action
+#)
+#
+#set(msg_files
+#  "msg/Behaviour.msg"
+#  "msg/BehaviourTree.msg"
+#)
+#rosidl_generate_interfaces(${PROJECT_NAME}
+#  ${msg_files}
+#  DEPENDENCIES
+#    actionlib_msgs
+#    std_msgs
+#    uuid_msgs
+#  ADD_LINTER_TESTS
+#)
+
+set(srv_files
+  "srv/GetBlackboardVariables.srv"
+  "srv/OpenBlackboardWatcher.srv"
+  "srv/CloseBlackboardWatcher.srv"
 )
 
-add_action_files(
-  DIRECTORY
-      action
-  FILES
-      Dock.action
-      Rotate.action
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${srv_files}
+  ADD_LINTER_TESTS
 )
-
-add_message_files(
-  DIRECTORY
-      msg
-  FILES
-      Behaviour.msg
-      BehaviourTree.msg
-)
-
-add_service_files(
-  DIRECTORY
-      srv
-  FILES
-      GetBlackboardVariables.srv
-      OpenBlackboardWatcher.srv
-      CloseBlackboardWatcher.srv
-)
-
-generate_messages(DEPENDENCIES
-    actionlib_msgs
-    std_msgs
-    uuid_msgs
-)
-
 ##############################################################################
 # Package
 ##############################################################################
 
-catkin_package(CATKIN_DEPENDS
-    message_runtime
-    std_msgs
-    uuid_msgs
-)
+ament_export_dependencies(rosidl_default_runtime)
+
+ament_package()
