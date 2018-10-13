@@ -44,7 +44,7 @@ Refer to the sphinx documentation for [py_trees](http://py-trees.readthedocs.io/
 
 ## PyTrees in ROS
 
-Other py_trees packages and their released versions in the ROS1/ROS2 ecosystems:
+This repository provides the `py_trees` related ROS message definitions only, however additional modules & documentation are available for using `py_trees` with `ROS` that provide ROS-
 
 | | [ROS2/Bouncy][bouncy-repository] | [ROS1/Melodic][melodic-repository] | [ROS1/Kinetic][kinetic-repository] |
 |:---:|:---:|:---:|:---:|
