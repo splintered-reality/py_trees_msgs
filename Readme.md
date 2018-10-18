@@ -48,11 +48,12 @@ This repository provides the `py_trees` related ROS message definitions only, ho
 
 | | [ROS2/Bouncy][bouncy-repository] | [ROS1/Melodic][melodic-repository] | [ROS1/Kinetic][kinetic-repository] |
 |:---:|:---:|:---:|:---:|
-| py_trees | [![0.7.x][0.7.x-sources-image]][py-trees-0.7.x] | [![0.6.x][0.6.x-sources-image]][py-trees-0.6.x] | [![0.5.x][0.5.x-sources-image]][py-trees-0.5.x] |
+| py_trees | [![0.8.x][0.8.x-sources-image]][py-trees-0.8.x] | [![0.6.x][0.6.x-sources-image]][py-trees-0.6.x] | [![0.5.x][0.5.x-sources-image]][py-trees-0.5.x] |
 | py_trees-msgs | - | [![0.3.x][0.3.x-sources-image]][py-trees-msgs-melodic] | [![0.3.x][0.3.x-sources-image]][py-trees-msgs-kinetic] |
 | py_trees-ros | - | [![0.5.x][0.5.x-sources-image]][py-trees-ros-melodic] | [![0.5.x][0.5.x-sources-image]][py-trees-ros-kinetic] |
 | rqt_py_trees | - | [![0.3.x][0.3.x-sources-image]][rqt-py-trees-melodic] | [![0.3.x][0.3.x-sources-image]][rqt-py-trees-kinetic] |
 
+[0.8.x-sources-image]: http://img.shields.io/badge/sources-0.8.x-blue.svg?style=plastic
 [0.7.x-sources-image]: http://img.shields.io/badge/sources-0.7.x-blue.svg?style=plastic
 [0.6.x-sources-image]: http://img.shields.io/badge/sources-0.6.x-blue.svg?style=plastic
 [0.5.x-sources-image]: http://img.shields.io/badge/sources-0.5.x-blue.svg?style=plastic
@@ -63,6 +64,7 @@ This repository provides the `py_trees` related ROS message definitions only, ho
 [melodic-repository]: http://repositories.ros.org/status_page/ros_melodic_default.html?q=py_trees
 [kinetic-repository]: http://repositories.ros.org/status_page/ros_kinetic_default.html?q=py_trees
 
+[py-trees-0.8.x]: https://github.com/stonier/py_trees/tree/release/0.8.x
 [py-trees-0.7.x]: https://github.com/stonier/py_trees/tree/release/0.7.x
 [py-trees-0.6.x]: https://github.com/stonier/py_trees/tree/release/0.6.x
 [py-trees-0.5.x]: https://github.com/stonier/py_trees/tree/release/0.5.x
