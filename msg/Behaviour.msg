@@ -11,6 +11,7 @@ uint8 SEQUENCE = 2
 uint8 SELECTOR = 3
 uint8 PARALLEL = 4
 uint8 CHOOSER = 5
+uint8 DECORATOR = 6
 
 # Blackbox Level - these must match what is in py_trees.common.BlackBoxLevel
 uint8 BLACKBOX_LEVEL_DETAIL = 1
