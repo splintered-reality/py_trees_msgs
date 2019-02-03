@@ -26,17 +26,17 @@ string name
 string class_name
 
 # The ID of this behaviour
-uuid_msgs/UniqueID own_id
+unique_identifier_msgs/UUID own_id
 
 # The ID of the parent behaviour (what if it's empty?)
-uuid_msgs/UniqueID parent_id
+unique_identifier_msgs/UUID parent_id
 
 # ID of the tip of this behaviour. If the tip is the behaviour itself or None,
 # this is empty
-uuid_msgs/UniqueID tip_id
+unique_identifier_msgs/UUID tip_id
 
 # The IDs of children of this behaviour, if any
-uuid_msgs/UniqueID[] child_ids
+unique_identifier_msgs/UUID[] child_ids
 
 # A composite, sequence, selector, plain behaviour, etc.
 uint8 type

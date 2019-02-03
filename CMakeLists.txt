@@ -23,7 +23,7 @@ find_package(rosidl_default_generators REQUIRED)
 # find_package(actionlib_msgs REQUIRED)
 # find_package(dynamic_reconfigure REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(uuid_msgs REQUIRED)
+find_package(unique_identifier_msgs REQUIRED)
 
 ##############################################################################
 # Messages
@@ -60,7 +60,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES
     # actionlib_msgs
     # std_msgs
-    uuid_msgs
+    unique_identifier_msgs
   ADD_LINTER_TESTS
 )
 ##############################################################################
