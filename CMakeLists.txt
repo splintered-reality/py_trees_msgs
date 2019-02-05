@@ -46,10 +46,12 @@ find_package(unique_identifier_msgs REQUIRED)
 set(msg_files
   "msg/Behaviour.msg"
   "msg/BehaviourTree.msg"
+  "msg/PublisherDetails.msg"
 )
 
 set(srv_files
   "srv/GetBlackboardVariables.srv"
+  "srv/IntrospectPublishers.srv"
   "srv/OpenBlackboardWatcher.srv"
   "srv/CloseBlackboardWatcher.srv"
 )
