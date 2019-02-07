@@ -47,11 +47,13 @@ set(msg_files
   "msg/Behaviour.msg"
   "msg/BehaviourTree.msg"
   "msg/PublisherDetails.msg"
+  "msg/SubscriberDetails.msg"
 )
 
 set(srv_files
   "srv/GetBlackboardVariables.srv"
   "srv/IntrospectPublishers.srv"
+  "srv/IntrospectSubscribers.srv"
   "srv/OpenBlackboardWatcher.srv"
   "srv/CloseBlackboardWatcher.srv"
 )
