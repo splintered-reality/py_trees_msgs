@@ -1,9 +1,8 @@
 # Py Trees Msgs
 
-[![License][license-image]] [license]
+[![LICENSE][license-image]](LICENSE)
 
 [license-image]: https://img.shields.io/badge/License-BSD%203--Clause-orange.svg?style=plastic
-[license]: LICENSE
 
 ## The Py Trees Repositories
 
